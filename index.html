@@ -1,0 +1,48 @@
+<head>
+    <meta name="description" content="Hello! I'm a 11th grader from Mirzapur Cadet College. Visit my personal website to know about me and my lifestyle. Thanks!">
+    <meta name="canonical" content="https://faheem41.github.io/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://faheem41.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Faheem Hossain | My website" />
+    <meta property="og:description" content="Hello! I'm a 11th grader from Mirzapur Cadet College. Visit my personal website to know about me and my lifestyle. Thanks!">
+    <meta property="og:image" content="logo-social.png">
+    <!--<meta name="twitter:card" content="summary_large_image">-->
+    <meta name="twitter:title" content="Faheem Hossain | My website">
+    <meta name="twitter:description" content="Hello! I'm a 11th grader from Mirzapur Cadet College. Visit my personal website to know about me and my lifestyle. Thanks!">
+    <meta name="twitter:image" content="logo-social.png">
+    <meta name="twitter:creator" content="@faheemhossain41">
+    <meta itemprop="name" content="My Website | Faheem Hossain">
+    <meta itemprop="description" content="Hello! I'm a 11th grader from Mirzapur Cadet College. Visit my personal website to know about me and my lifestyle. Thanks!">
+    <title>My Website | Faheem Hossain</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.png" sizes="32x32">
+    <link rel="icon" href="favicon192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="favicon192.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&display=swap" rel="stylesheet">
+    <div class="pg" id="pg1">
+        <p style="font-size: 3vw; color: #05445e;">
+            <strong id="day" style="font-size: 20vw; color: #d4f1f4;">76</strong><br>days left<br>In Sha Allah
+        </p>
+    </div>
+    <div class="pg" id="pg2">
+        <p style="font-size: 3vw; color: #5885af;">
+            <strong id="month" style="font-size: 8vw; color: #c3e0e5">76</strong><br><br>In Sha Allah
+        </p>
+    </div>
+    <script>
+        var vicDay = new Date("Dec 5, 2026").getTime();
+        var now = new Date().getTime();
+        var dstn = vicDay - now;
+        var days = Math.floor(dstn / (1000 * 60 * 60 * 24));
+        document.getElementById("day").innerHTML = days;
+        var months = Math.floor(days / 30);
+        var days = days - (months*30);
+        document.getElementById("month").innerHTML = months + "m " + days + "d left";
+    </script>
+</body>
